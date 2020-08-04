@@ -1,0 +1,23 @@
+caso 1: 1 ok
+caso 0: 000.. ok
+
+OTT
+can_write= 1, 2, 3, 4, 5, 6, 7.
+value= { 1, 2, 4 }
+bit= { 0, 1, 2 }
+
+add 1 bit, il numero cresce quindi value(old+new) != value(old) ... NO!
+del 1 bit, può essere che value(TOT bit)= value(1 bit)?
+        SI! sse value(x1)+value(x2)+.. == value(1 bit) => true.
+        NO! sse value(x1)+value(x2)+.. != value(1 bit) => false
+        
+ESA
+can_write= 1, 2, 3, 4, 5, 6, 7, 8, ..., 15
+value= { 1, 2, 4, 8 }
+bit= { 0, 1, 2, 3 }
+
+in entrambi i casi da OTT || ESA a BIN,
+non è possibile riscrivere un bit in posizione x in almeno due modi diversi.
+=> non esistono ( TOT bit != (1 bit) )= value(1 bit).
+=> l'algoritmo greedy:
+        non può confondere la sequenza di bit nella decompressione.
