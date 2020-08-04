@@ -1,0 +1,21 @@
+9 file.h
+9 file.cpp
+----
+18
+----
+4 file multimedia {icona, suoni, relazione, lista}
+----
+22
+----
+2 file profilo {file.pro, file.pro.user}
+----
+24
+----
+1 file extra cpp --main.cpp
+----
+25
+----
+1 file extra ui  --mainwindow.ui
+----
+26
+.
