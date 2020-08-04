@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo ""
+echo "create node site181981 index.js"
+echo ""
+echo "restart site181981"
+echo ""
+echo "remove  site181981"
+echo ""
+echo "http://site181981.tw.cs.unibo.it"
+echo ""
+echo ""
+echo "./usenode.sh index.js"
+echo ""
+echo "filindo.cs.unibo.it:8000"
+echo ""

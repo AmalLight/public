@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  color: #505962;
+}
+
+/*--- navbar ---*/
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .1rem;
+  height: 55px;
+  background-color: #7fb3d5;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-nav li {
+  padding-right: .7rem;
+}
+
+nav a.active {
+  color: white;
+}
+
+
+/*--- jumbotron ---*/
+
+.jumbotron {
+  padding-top: 3rem;
+  background-color: #d1e3ef;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron h1 {
+  padding-top: 3rem;
+  font-weight: 400;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.gameContainer {
+  padding-top: 2rem;
+}
+
+.gameTitle {
+  padding-top: 1rem;
+}
+
+.btn-group {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.container {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .5rem black;
+  color: #0b6095;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+h3{
+  font-weight: 300;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+#home {
+  height: 100vh;
+}
+
+#storiesJumbotron {
+  display: none;
+  height: 100vh;
+
+}
+
+#questionsJumbotron {
+  display: none;
+  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#answerButtons {
+  display: none;
+}
+
+#answerParagraph {
+  display: none;
+}
+#answerSubmission {
+  display: none;
+  text-align: center;
+}
+
+#wrongAnswer {
+  display: none;
+}
+
+/*---editor---*/
+#software {
+  margin-bottom: 5rem;
+  display: none;
+}
+
+#editorButtonGroup {
+  text-align: center;
+  
+}
+
+/*---footer---*/
+footer {
+  background-color: #7fb3d5;
+  font-size: 13px;
+  color: #051b29;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+  
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #1c8fd8;
+}
+
+
+.space, nav { height: 45px; }
+textarea { padding: 10px; resize: none; }
+button, img { transition: all 0.3s ease-in-out; }
+nav, footer { font-size: 14px; background-color: #7fb3d5; }
+
+@media ( max-width: 576px ) { }
+
+@media ( max-width: 768px )
+{ 
+    #container2 text,
+    #container4 text { font-size: 10px; }
+}
+
+@media ( min-width: 992px  ) { }
+
+@media ( min-width: 1200px ) { }
+
+
+/* SYSTEM */
+/*
+.row { padding: 10px; }
+
+#riga2 button,
+#riga3 button,
+#riga4 button {
+    border:   1px solid;
+    width:         100%;
+    min-height:    50px;
+    border-radius: 25px;
+}
+
+
+
+#riga2 button:active,
+#riga3 button:active,
+#riga4 button:active {
+    background-color: darkblue;
+    font-weight:      bold;
+    color:            gold;
+}
+
+#riga2, #riga3, #riga4 {
+    border: 2px groove lightgreen;
+    background-color: rgba( 255, 255, 255, 0.5 );
+
+    border-radius: 15px;
+    min-height:  200px;
+}
+*/
+nav li { padding-right: .7rem; }
+nav a:hover { cursor: pointer; }
+
+/* CREARE */
+
+input[ type=text ], textarea { height: 100%; width: 100%; }
+
+#container3 img { margin-bottom:0px; }
+
+#container3 img,
+#container4 img { opacity: 0.4; }
+
+#container3 img:active,
+#container4 img:active { opacity: 1.0; }
+
+/* FOOTER */
+
+footer p { padding-top: 3rem; padding-bottom: 1.5rem; }
+footer a       { color:   white; }
+footer a:hover { color: #1c8fd8; }

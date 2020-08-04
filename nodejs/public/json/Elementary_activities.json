@@ -1,0 +1,126 @@
+{
+    "elementary_activities" : [
+    {
+        "text" : "Dove butto questa cartaccia?",
+        "possible_answers" : [
+            "Bidone della plastica",
+            "Bidone dell'organico",
+            "Bidone della carta",
+            "Bidone delle cartacce"
+        ],
+        "right_answer" : "Bidone della plastica",
+        "positive_end_message" : "Complimenti, risposta esatta",
+        "negative_end_message" : "Risposta errata"
+    },
+    {
+        "text" : "Cosa succede al cibo che buttiamo nel bidone?",
+        "possible_answers" : [
+            "Viene bruciato",
+            "Diventa cibo per gli animali",
+            "Diventa terriccio per l'orto",
+            "Viene abbandonato nelle discariche"
+        ],
+        "right_answer" : "Diventa terriccio per l'orto",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Cosa ci protegge dai raggi del sole?",
+        "possible_answers" : [
+            "La crema solare",
+            "Il cappello",
+            "Uno strato di ozono attorno alla terra",
+            "Uno strato di azoto attorno alla terra"
+        ],
+        "right_answer" : "Uno strato di ozono attorno alla terra",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "In quanti modi potresti risparmiare acqua secondo Martina?",
+        "video_link" : "https://www.youtube.com/watch?v=k3UcUF7dimo",
+        "possible_answers" : [
+            "1 modo",
+            "2 modi",
+            "3 modi",
+            "4 modi"
+        ],
+        "right_answer" : "4 modi",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Quali animali sono in pericolo di estinzione?",
+        "possible_answers" : [
+            "La tigre",
+            "L'orso polare",
+            "L'aquila reale",
+            "Tutti i precedenti"
+        ],
+        "right_answer" : "Tutti i precedenti",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Qual'è il compito del WWF?",
+        "possible_answers" : [
+            "Proteggere gli animali e l'ambiente",
+            "Proteggere i senzatetto",
+            "Proteggere le persone malate",
+            "Proteggere soltanto i panda"
+        ],
+        "right_answer" : "Proteggere gli animali e l'ambiente",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Dove lo butto?",
+        "possible_answers" : [
+            "Nel bidone della carta",
+            "Nel bidone dell'indifferenziata",
+            "Dipende dove abito",
+            "Nel bidone del vetro"
+        ],
+        "right_answer" : "Dipende dove abito",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Cosa succede se dimentico di spegnere la luce?",
+        "possible_answers" : [
+            "I miei genitori si arrabbiano",
+            "Spreco energia",
+            "Arriva la polizia",
+            "Non succede niente"
+        ],
+        "right_answer" : "Spreco energia",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Perchè, secondo Paxi, gli scienzati sono preoccupati?",
+        "video_link" : "https://www.youtube.com/watch?v=RR30r52uQmQ",
+        "possible_answers" : [
+            "La terra si sta riscaldando",
+            "La terra si sta raffreddando",
+            "La terra sta diventando più piccola",
+            "Non lo so"
+        ],
+        "right_answer" : "La terra si sta riscaldando",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Dove si butta il sacchetto delle patatine?",
+        "possible_answers" : [
+            "Bidone della plastica",
+            "Bidone della carta",
+            "Bidone dell'indifferenziata",
+            "Bidone del vetro"
+        ],
+        "right_answer" : "Bidone della plastica",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    }
+    ]
+}

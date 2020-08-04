@@ -1,0 +1,46 @@
+{
+    "story" : {
+        "title": "example title",
+        "player" : {
+            "player_id" : "xgje78"
+        },
+        "author" : {
+            "author_id" : "jfwh83",
+            "name"       : "luigi",
+            "surname"    : "natiche",
+            "notes"      : "gioco creato per...",
+            "copyright"  : "@luiginatiche",
+            "story_info" : {
+                "creation_day" : "25/05/2020",
+                "edit_options"  : {
+                    "deletable"   : "false",
+                    "delete_day"  : "day",
+                    "modifiable"  : "true",
+                    "modify_day"  : "day"
+                }
+            }
+        },
+        "story_mode" : {
+            "single": {
+                "single_selected" : "true",
+                "players_number_single" : "1"
+            },
+            "group" : {
+                "group_selected" : "false",
+                "players_number_group" : "5"
+            },
+            "class" : {
+                "class_selected"       : "false",
+                "players_number_class" : "10",
+                "max_players"          : "30",
+                "max_member_group"     : "5",
+                "max_groups"           : "8"
+            }
+        },
+        "age" : {
+            "elementary" : "true",
+            "middle"     : "false",
+            "high"       : "false"
+        }        
+    }
+}

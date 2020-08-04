@@ -1,0 +1,126 @@
+{
+    "secondaryschool_activities" : [
+    {
+        "text" : "Dove butto lo scontrino?",
+        "possible_answers" : [
+            "Bidone della plastica",
+            "Bidone della carta",
+            "Bidone dell’organico",
+            "Bidone dell’indifferenziata"
+        ],
+        "right_answer" : "Bidone dell’indifferenziata",
+        "positive_end_message" : "Complimenti, risposta esatta",
+        "negative_end_message" : "Risposta errata"
+    },
+    {
+        "text" : "Il caricatore attaccato ad una presa...",
+        "possible_answers" : [
+            "Consuma sempre energia",
+            "Non consuma mai energia",
+            "Consuma energia solo quando viene collegato un dispositivo",
+            "Consuma energia solo in alcuni casi"
+        ],
+        "right_answer" : "Consuma sempre energia",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Quanto impiega una bottiglia di plastica a deteriorarsi?",
+        "video_link" : "https://youtu.be/OVNsx7MGffA",
+        "possible_answers" : [
+            "10 anni",
+            "100 anni",
+            "1000 anni",
+            "10000 anni"
+        ],
+        "right_answer" : "1000",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Dove butto il cartone della pizza?",
+        "possible_answers" : [
+            "Bidone della carta",
+            "Bidone della plastica",
+            "Bidone dell’indifferenziata",
+            "Dipende se è pulito"
+        ],
+        "right_answer" : "Dipende se è pulito",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Che cosa fa Greenpeace?",
+        "possible_answers" : [
+            "Incoraggia le persone a cambiare abitudini",
+            "Promuove la pace",
+            "Protegge l’ambiente",
+            "Tutti le precedenti sono giuste"
+        ],
+        "right_answer" : "Tutti le precedenti sono giuste",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Qual’è stata la città più inquinata in Italia nel 2019?",
+        "possible_answers" : [
+            "Palermo",
+            "Bergamo",
+            "Torino",
+            "Milano"
+        ],
+        "right_answer" : "Torino",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "In quanti modi puoi sostenere l’agricoltura biologica secondo il video?",
+        "video_link" : "https://youtu.be/WL7QE3my6kM",
+        "possible_answers" : [
+            "1 modo",
+            "2 modi",
+            "3 modi",
+            "4 modi"
+        ],
+        "right_answer" : "3 modi",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "In che modo le foreste salvaguardano la Terra?",
+        "possible_answers" : [
+            "Assorbono anidride carbonica",
+            "Proteggono gli animali",
+            "Assorbono ossigeno",
+            "Rilasciano carbonio"
+        ],
+        "right_answer" : "Assorbono anidride carbonica",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "L’energia da biomassa è...",
+        "possible_answers" : [
+            "Una fonte di energia non rinnovabile",
+            "Una fonte di energia mista",
+            "Una fonte di energia rinnovabile",
+            "Non lo so"
+        ],
+        "right_answer" : "Una fonte di energia rinnovabile",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    },
+    {
+        "text" : "Dove butto i fazzoletti puliti e non colorati/ con piccole decorazioni?",
+        "possible_answers" : [
+            "Bidone della carta",
+            "Bidone dell’organico",
+            "Bidone della plastica",
+            "Bidone dell’indifferenziata"
+        ],
+        "right_answer" : "Bidone dell’organico",
+        "positive_end_message" : "complimenti, risposta esatta",
+        "negative_end_message" : "risposta errata"
+    }
+    ]
+}

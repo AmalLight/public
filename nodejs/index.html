@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Mistero al Museo</title>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="creator" content="Daniela Santoro, Adriano Ongaretto, Sara Albertini">
+        <meta name="date" content="06-2020">
+        <meta name="subject" content="videogame, quiz">
+        <meta name="description" content="Mistero al Museo è un'applicazione web interattiva con l'obiettivo di intrattenere gli studenti">
+        <meta name="format" content="text/html">
+        <meta name="language" content="it">
+        <!-- end meta tags -->
+
+        <!-- script -->
+        <script type = text/javascript src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+        <script type = text/javascript src="static/script/player.js"                 ></script>
+        <script type = text/javascript src="static/script/create1.js"                ></script>
+        <script type = text/javascript src="static/script/create2.js"                ></script>
+        <script type = text/javascript src="static/script/loading.js"                ></script>
+        <script type = text/javascript src="static/script/loadmenu.js"               ></script>
+        <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"          ></script>
+
+        <!-- stylesheet -->
+        <link href="static/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"    ></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" >
+        <link href="static/back/mem.png" rel="icon" />
+        <!-- end stylesheet -->
+
+        <!-- Page is ready -->
+        <script>
+        var function_json = new function()
+        {
+            this.create_json = {}; this.domanda_pos = 0;
+
+            this.meno = function() { domanda_pos = domanda_pos - 1; }
+            this.plus = function() { domanda_pos = domanda_pos + 1; }
+
+            this.reset = function() { domanda_pos = 0;    }
+            this.posdj = function() { return domanda_pos; }
+
+            this.alloc = function( data ) { create_json = data; }
+            this.readj = function() { return create_json;       }
+
+            //-------------------------------------------------------------------------------------------------------
+            //-------------------------------------------------------------------------------------------------------
+
+            this.json_list = { 'titolo' : { 'json' : '{}'/*json*/, 'pos' : 0/*pos*/ } };
+
+            this.insert = function( titolo, el )
+            {
+                this.json_list[ titolo ] = {};
+                this.json_list[ titolo ][ 'pos'  ] =  0;
+                this.json_list[ titolo ][ 'json' ] = el;
+            }
+
+            this.readjs = function( titolo ) { return this.json_list[ titolo ][ 'json' ]; }
+            this.readps = function( titolo ) { return this.json_list[ titolo ][ 'pos' ];  }
+
+            this.nextps = function( titolo ) { this.json_list[ titolo ][ 'pos' ] = this.readps( titolo )+1; }
+            this.prevps = function( titolo ) { this.json_list[ titolo ][ 'pos' ] = this.readps( titolo )-1; }
+
+            var TextSelected = ''; var TitoloSelected = '';
+
+            this.selText   = function( text )   { this.TextSelected   = text;   }
+            this.selTitolo = function( titolo ) { this.TitoloSelected = titolo; }
+
+            this.readText   = function() { return this.TextSelected;   }
+            this.readTitolo = function() { return this.TitoloSelected; }
+
+            this.question = function( titolo )
+            {
+                return this.json_list[ titolo ][ 'json' ][ 'gioco' ][ this.json_list[ titolo ][ 'pos' ] ];
+            }
+        }
+
+        $( document ).ready( function() { loadcards(); });
+        </script>
+    </head>
+   
+    <body data-spy="scroll" data-target="#navbarResponsive">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="" >Mistero al Museo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="loadStories()" > Inizia a Giocare </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="crea()" > Crea la tua storia </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Jumbotron -->
+        <div class="jumbotron text-center jumbotron-fluid" id="home">
+          <h1 id="jumbotronHead">Mistero al Museo</h1>
+          <p class="lead text-muted" id="">sottotitolo / descrizione / frase simpatica</p>
+          <button class="btn btn-outline-dark btn-md" onclick="loadStories()" > Inizia a Giocare   </button>
+          <button class="btn btn-outline-dark btn-md" onclick="crea()" > Crea la tua storia </button>
+        </div>
+
+        <!-- Jumbotron part two-->
+        <div class="jumbotron text-center jumbotron-fluid" id="storiesJumbotron">
+            <div class="row text-center" id="rowstories" ></div>
+        </div>
+        
+        <!-- questions list section -->
+        <div class="jumbotron text-center" id="questionsJumbotron">
+            <h1 id="questionHead">Mistero al Museo</h1>
+
+            <h2 class="lead text-muted" id="questionParagraph"></h2>    
+            <h2 class="lead text-muted" id="answerParagraph"></h2>
+
+            <div class="alert alert-info alert-dismissible fade show" role="alert" id="wrongAnswer">
+                <strong>Risposta errata!</strong> Ritenta.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="closeAlert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+        </div>
+        
+    
+        <!-- answers list section -->
+        <div class="container" id="answerButtons"></div>
+    
+        <!-- answer submission section -->
+        <div class="container" id="answerSubmission">
+            <button type="button" onclick= "confirmAnswer()" class="btn btn-primary btn-lg">Conferma</button>
+            <button type="button" onclick="backtoQuestion()" class="btn btn-secondary btn-lg">Torna indietro</button>
+        </div>
+
+        <!-- creator section -->
+        <div class = "container" id= "software">
+              <div class = "container" id=riga3></div>
+              <div class = "container" id=riga4></div>
+              <div class = "container" id=riga2></div>
+        </div>
+    
+        <!-- footer section -->
+        <div id="footer" class="offset fixed-bottom">
+            <footer>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <p>Copyright &copy; Daniela Santoro 2020<br> ALMA MATER STUDIORUM - Università di Bologna<br>
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">
+                            <img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png"/>
+                        </a><br>
+                        <a href="">Contatti</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>    
+    </body>
+</html>
