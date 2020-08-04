@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Near
+Terminal=true
+Exec=Near
+Icon=/home/kaumi/my_software/java/Near/img/img.png
+Name[it_IT]=Near

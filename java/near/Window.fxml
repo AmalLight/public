@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox cacheShape="false" centerShape="false" depthTest="DISABLE" pickOnBounds="false" scaleShape="false" snapToPixel="false" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="near.Interface">
+   <children>
+      <VBox cacheShape="false" centerShape="false" depthTest="DISABLE" pickOnBounds="false" scaleShape="false" snapToPixel="false" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox cacheShape="false" centerShape="false" depthTest="DISABLE" maxHeight="65.0" minHeight="65.0" pickOnBounds="false" prefHeight="65.0" scaleShape="false" snapToPixel="false" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button alignment="CENTER" blendMode="EXCLUSION" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" focusTraversable="false" maxHeight="65.0" minHeight="65.0" mnemonicParsing="false" onAction="#OnClickEnd" pickOnBounds="false" prefHeight="65.0" scaleShape="false" snapToPixel="false" text="&gt;" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="option" blendMode="EXCLUSION" cacheShape="false" centerShape="false" depthTest="DISABLE" focusTraversable="false" maxHeight="65.0" minHeight="65.0" onDragEntered="#FileOnOption" onKeyReleased="#onWriteInTop" onMouseClicked="#onWriteInTop" pickOnBounds="false" prefHeight="65.0" promptText="Set Dir." scaleShape="false" snapToPixel="false" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="Op" blendMode="EXCLUSION" cacheShape="false" centerShape="false" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="65.0" minHeight="65.0" mnemonicParsing="false" onAction="#onClickOp" pickOnBounds="false" prefHeight="65.0" scaleShape="false" snapToPixel="false" text="Op.">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="M" blendMode="EXCLUSION" cacheShape="false" centerShape="false" depthTest="DISABLE" focusTraversable="false" maxHeight="65.0" minHeight="65.0" mnemonicParsing="false" onAction="#OnClickM" pickOnBounds="false" prefHeight="65.0" scaleShape="false" snapToPixel="false" text="MF">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Button>
+                  <VBox cacheShape="false" centerShape="false" depthTest="DISABLE" maxHeight="65.0" minHeight="65.0" pickOnBounds="false" prefHeight="65.0" scaleShape="false" snapToPixel="false" />
+               </children>
+            </HBox>
+            <AnchorPane cacheShape="false" centerShape="false" depthTest="DISABLE" pickOnBounds="false" scaleShape="false" snapToPixel="false" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="Plane" depthTest="DISABLE" nodeOrientation="INHERIT" opacity="0.3" smooth="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <SplitPane fx:id="splitpane" cacheShape="false" centerShape="false" depthTest="DISABLE" dividerPositions="0.8" focusTraversable="false" pickOnBounds="false" scaleShape="false" snapToPixel="false" style="-fx-background-color: khaki;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                        <TextArea fx:id="write" blendMode="MULTIPLY" cacheShape="false" centerShape="false" depthTest="DISABLE" focusTraversable="false" onKeyReleased="#onWriteInBot" onMouseClicked="#onWriteInBot" pickOnBounds="false" promptText="Write Me." scaleShape="false" snapToPixel="false">
+                           <font>
+                              <Font name="Monospaced Bold" size="14.0" />
+                           </font>
+                        </TextArea>
+                        <VBox cacheShape="false" centerShape="false" depthTest="DISABLE" pickOnBounds="false" scaleShape="false" snapToPixel="false">
+                           <children>
+                              <VBox cacheShape="false" centerShape="false" depthTest="DISABLE" maxHeight="296.0" minHeight="296.0" pickOnBounds="false" prefHeight="296.0" scaleShape="false" snapToPixel="false">
+                                 <children>
+                                    <TextField fx:id="Line" cacheShape="false" centerShape="false" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" minHeight="32.0" onKeyReleased="#LineAction" onMouseClicked="#LineAction" pickOnBounds="false" prefHeight="32.0" promptText="Line" scaleShape="false" snapToPixel="false" style="-fx-text-fill: red;">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="search" cacheShape="false" centerShape="false" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" minHeight="32.0" onKeyReleased="#searchAction" onMouseClicked="#searchAction" pickOnBounds="false" prefHeight="32.0" promptText="Search" scaleShape="false" snapToPixel="false" style="-fx-text-fill: red;">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="subs" cacheShape="false" centerShape="false" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" minHeight="32.0" onKeyReleased="#subsAction" onMouseClicked="#subsAction" pickOnBounds="false" prefHeight="32.0" promptText="substitution" scaleShape="false" snapToPixel="false" style="-fx-text-fill: red;">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="number" cacheShape="false" centerShape="false" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" minHeight="32.0" pickOnBounds="false" prefHeight="32.0" promptText="number" scaleShape="false" snapToPixel="false" style="-fx-text-fill: red;">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </TextField>
+                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" depthTest="DISABLE" maxHeight="32.0" minHeight="32.0" pickOnBounds="false" prefHeight="32.0" scaleShape="false" snapToPixel="false">
+                                       <children>
+                                          <Button fx:id="Prev" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" maxWidth="50.0" minHeight="32.0" minWidth="50.0" mnemonicParsing="false" onAction="#Prev" pickOnBounds="false" prefHeight="32.0" prefWidth="50.0" scaleShape="false" snapToPixel="false" text="&lt;&lt;" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="Next" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" maxWidth="50.0" minHeight="32.0" minWidth="50.0" mnemonicParsing="false" onAction="#Next" pickOnBounds="false" prefHeight="32.0" prefWidth="50.0" scaleShape="false" snapToPixel="false" text="&gt;&gt;" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" depthTest="DISABLE" layoutX="10.0" layoutY="170.0" maxHeight="32.0" minHeight="32.0" pickOnBounds="false" prefHeight="32.0" scaleShape="false" snapToPixel="false">
+                                       <children>
+                                          <Button fx:id="Minus" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" maxWidth="35.0" minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#Minus" pickOnBounds="false" prefHeight="32.0" prefWidth="35.0" scaleShape="false" snapToPixel="false" style="-fx-text-fill: blue;" text="--" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="Plus" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" maxWidth="35.0" minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#Plus" pickOnBounds="false" prefHeight="32.0" prefWidth="35.0" scaleShape="false" snapToPixel="false" style="-fx-text-fill: blue;" text="+" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" depthTest="DISABLE" layoutX="10.0" layoutY="170.0" maxHeight="32.0" minHeight="32.0" pickOnBounds="false" prefHeight="32.0" scaleShape="false" snapToPixel="false">
+                                       <children>
+                                          <Button fx:id="View" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" focusTraversable="false" maxHeight="32.0" maxWidth="35.0" minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#OnClickV" pickOnBounds="false" prefHeight="32.0" prefWidth="35.0" scaleShape="false" snapToPixel="false" style="-fx-text-fill: red;" text="V" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="clear" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" maxWidth="35.0" minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#OnClickC" pickOnBounds="false" prefHeight="32.0" prefWidth="35.0" scaleShape="false" snapToPixel="false" style="-fx-text-fill: red;" text="C" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" depthTest="DISABLE" layoutX="10.0" layoutY="202.0" maxHeight="32.0" minHeight="32.0" pickOnBounds="false" prefHeight="32.0" scaleShape="false" snapToPixel="false">
+                                       <children>
+                                          <Button fx:id="BShiftL" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" maxWidth="35.0" minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#ShiftL" pickOnBounds="false" prefHeight="32.0" prefWidth="35.0" scaleShape="false" snapToPixel="false" style="-fx-text-fill: green;" text="&lt;" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="BShiftR" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" maxWidth="35.0" minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#ShiftR" pickOnBounds="false" prefHeight="32.0" prefWidth="35.0" scaleShape="false" snapToPixel="false" style="-fx-text-fill: green;" text="&gt;" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="Past" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" disable="true" focusTraversable="false" maxHeight="32.0" maxWidth="35.0" minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#Past" pickOnBounds="false" prefHeight="32.0" prefWidth="35.0" scaleShape="false" snapToPixel="false" style="-fx-text-fill: green;" text="^" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" cacheShape="false" centerShape="false" depthTest="DISABLE" scaleShape="false" snapToPixel="false">
+                                       <children>
+                                          <Circle fx:id="monitor1" depthTest="DISABLE" radius="10.0" stroke="BLACK" strokeType="INSIDE">
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </HBox.margin>
+                                          </Circle>
+                                          <Label fx:id="Action" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" depthTest="DISABLE" focusTraversable="false" maxHeight="30.0" minHeight="30.0" pickOnBounds="false" prefHeight="30.0" scaleShape="false" snapToPixel="false" style="-fx-text-fill: blue;" text="Action" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </VBox>
+                              <ScrollPane fx:id="scrollpane" blendMode="MULTIPLY" cacheShape="false" centerShape="false" depthTest="DISABLE" fitToHeight="true" fitToWidth="true" focusTraversable="false" hbarPolicy="NEVER" pickOnBounds="false" scaleShape="false" snapToPixel="false" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+                                 <content>
+                                    <VBox fx:id="RightVBox" alignment="TOP_CENTER" blendMode="MULTIPLY" cacheShape="false" centerShape="false" depthTest="DISABLE" onMouseClicked="#OnClickRVBox" pickOnBounds="false" scaleShape="false" snapToPixel="false" />
+                                 </content>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding></ScrollPane>
+                           </children>
+                        </VBox>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>
