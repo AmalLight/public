@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Fiamma
+Terminal=true
+Exec=fGUI
+Icon=/home/kaumi/my_software/python/Fiamma/img/img.png
+Name[it_IT]=Fiamma
