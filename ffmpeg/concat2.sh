@@ -24,6 +24,6 @@ else
     echo 'forgot arg2: file2 ?'
     echo 'forgot arg3: extension ?'
     echo ''
-    echo 'forgot arg5 ? concat2 for movie '
+    echo 'forgot arg4: * optional * concat for movie '
     echo ''
 fi
