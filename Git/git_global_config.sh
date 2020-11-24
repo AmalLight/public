@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# ./global_config.sh AmalLight ilovenewblood@gmail.com
-
 pass=`combo mohammad`
 
 echo $pass | sudo -S rm -f /usr/bin/git_global
@@ -14,14 +12,20 @@ then
     git config --global user.email $2
 
 else
+    name=AmalLight
+    email=ilovenewblood@gmail.com
+
     echo ''
-    echo "1:name ; 2:email"
+    echo "1:$name ; 2:$email"
     echo
+
+    git config --global user.name  AmalLight
+    git config --global user.email ilovenewblood@gmail.com
 fi
 
 echo
 
-git config --global core.editor "notepad -multiInst -nosession"
+git config --global core.editor mousepad
 
 # sudo apt install meld -y
 
