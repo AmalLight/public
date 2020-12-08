@@ -3,7 +3,6 @@
 echo *** | sudo -S rm -f /usr/bin/end
 sudo ln -s /home/kaumi/SoSupersonic/scripts/end.sh /usr/bin/end
 
-home=/home/kaumi
 rm -f /home/kaumi/.bash_history
 
 reset

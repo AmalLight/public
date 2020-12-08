@@ -52,7 +52,7 @@ sudo iptables -L -vn
 
 echo ''
 
-# -j DNAT for prer , has need of ip ; REDIRECT doesn't have need of it
+# -j DNAT for prer , has need of ip ; REDIRECT doesn't have need of that
 # -j SNAT for post ,
 # --dport for inpout --sport for input!=output ? | input  => -s  src!=dest <= iM
 # --sport for output --dport for output!=input   | output => -d dest!=src  <= iM
