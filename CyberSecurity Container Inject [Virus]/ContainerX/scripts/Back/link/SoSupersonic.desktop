@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=SoSupersonic
+Comment=Starts the VirtualBox machine SoSupersonic
+Type=Application
+Exec=SoSupersonic
+Icon=virtualbox-vbox.png
+Terminal=true

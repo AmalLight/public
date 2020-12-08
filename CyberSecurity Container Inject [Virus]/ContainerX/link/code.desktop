@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=code
+Exec=launch 1
+Icon=com.visualstudio.code
+Type=Application
+Terminal=true
