@@ -68,7 +68,7 @@ then
     sudo -S mount /dev/sdb1 /media/kaumi/Hack
 
     sleep 10
-    /usr/lib/virtualbox/VirtualBoxVM --comment "SoSupersonic" --startvm "{41c79128-74de-4b17-8805-ed8d47dd6032}" &
+    /usr/lib/virtualbox/VirtualBoxVM --startvm "{41c79128-74de-4b17-8805-ed8d47dd6032}" &
     sleep 5
 fi
 
