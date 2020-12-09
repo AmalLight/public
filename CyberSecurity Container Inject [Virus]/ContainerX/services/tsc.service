@@ -1,0 +1,13 @@
+[Unit]
+Description=SoSupersonic tsc
+After=network.target
+
+[Service]
+Type=simple
+User=kaumi
+WorkingDirectory=/home/kaumi/SoSupersonic/server
+ExecStart=tsc -w --allowSyntheticDefaultImports
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

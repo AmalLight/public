@@ -16,4 +16,4 @@ app.get('/', (req, res, next) => {
             console.log(`html send file done without error with the root: ${__dirname + '/../../public'}`);
     });
 });
-app.listen(8080, () => { console.log('server started'); });
+app.listen(8080, () => { console.log('server started 2'); });

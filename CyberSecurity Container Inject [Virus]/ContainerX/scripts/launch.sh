@@ -30,26 +30,10 @@ sudo iptables -A OUTPUT -p tcp --sport 22 -j DROP
 
 sudo iptables -L -vn
 
-dir=/home/kaumi/SoSupersonic/server
-if (( ${#@} > 0 ));
-then
-    start=$1
+cd /home/kaumi/SoSupersonic/server/
 
-    echo ''
-    echo "Script run.. start:$start"
-    echo ''
+if [[ ! -f tsconfig.json ]]; then tsc --init ; fi ;
 
-    if [[ ! -f "$dir/tsconfig.json" ]];
-    then
-        cd $dir ; tsc --init
-    fi;
+/usr/bin/code /home/kaumi/SoSupersonic/server &
 
-    if (( $start > 0 ));
-    then
-        xfce4-terminal --default-working-directory=$dir -e "tsc -w --allowSyntheticDefaultImports" &
-        xfce4-terminal --default-working-directory=$dir -e "npm run sass" &
-        
-        /usr/bin/code /home/kaumi/SoSupersonic/server &
-        nodemon $dir/dist/private/scripts/index.js
-    fi
-fi
+sleep 3

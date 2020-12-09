@@ -1,0 +1,13 @@
+[Unit]
+Description=SoSupersonic sass
+After=network.target
+
+[Service]
+Type=simple
+User=kaumi
+WorkingDirectory=/home/kaumi/SoSupersonic/server
+ExecStart=npm run sass
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=SoSupersonic nodemon
+After=network.target
+
+[Service]
+Type=simple
+User=kaumi
+WorkingDirectory=/home/kaumi/SoSupersonic/server
+ExecStart=nodemon dist/private/scripts/index.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

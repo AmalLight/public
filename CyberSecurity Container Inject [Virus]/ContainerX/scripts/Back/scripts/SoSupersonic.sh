@@ -75,10 +75,11 @@ fi
 bool=`pgrep VirtualBoxVM`
 until (( ${#bool} < 1 ));
 do
-    echo 'v exists'
+    echo -n ' v exists '
     sleep 60
     bool=`pgrep VirtualBoxVM`
 done
+echo ''
 echo '! exists'
 stop
 
