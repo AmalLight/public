@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#**FIREWALL---START---**#
+echo ''
+echo 'START and CONNECT'
+echo ''
 
 pass=***
 
@@ -10,57 +12,44 @@ sudo sysctl -a | grep ipv4 | grep forwarding | grep 1
 sudo rm -f /usr/bin/SoSupersonic
 sudo ln -s /home/kaumi/Back/scripts/SoSupersonic.sh /usr/bin/SoSupersonic
 
-#**FLUSH**#
+sudo rm -f /usr/bin/ipAction
+sudo ln -s /home/kaumi/Back/scripts/ipAction.sh /usr/bin/ipAction
 
-sudo iptables -Z
-sudo iptables -F
-sudo iptables -X
-
-sudo iptables -t nat -Z
-sudo iptables -t nat -F
-sudo iptables -t nat -X
-
-#**INPUT/OUTPUT**#
-
-sudo iptables -A INPUT  -s 192.168.43.1   -j ACCEPT
-sudo iptables -A OUTPUT -d 192.168.43.1   -j ACCEPT
-sudo iptables -A INPUT  -s 192.168.56.103 -j ACCEPT
-sudo iptables -A OUTPUT -d 192.168.56.103 -j ACCEPT
-
-sudo iptables -A INPUT  -s 192.168.43.0/24 -j DROP
-sudo iptables -A OUTPUT -d 192.168.43.0/24 -j DROP
-sudo iptables -A INPUT  -s 192.168.56.0/24 -j DROP
-sudo iptables -A OUTPUT -d 192.168.56.0/24 -j DROP
-
-#**PREROUTING**#
+cono=/home/kaumi/Back/scripts/cono.sh
 
 echo ''
-echo 'NAT'
+echo 'FLUSH'
 echo ''
 
-sudo iptables -t nat -A PREROUTING -s 192.168.43.0/24 -p tcp --dport 80 -j DNAT --to-destination 192.168.56.103:8080
-sudo iptables -t nat -A PREROUTING -s 192.168.43.0/24 -p udp --dport 80 -j DNAT --to-destination 192.168.56.103:8080
-sudo iptables -t nat -A POSTROUTING -o vboxnet0 -j MASQUERADE
-
-sudo iptables -L -vn -t nat
+ipAction nat
+ipAction filter
 
 echo ''
 echo 'INPUT/OUTPUT'
 echo ''
 
-sudo iptables -L -vn
+ipAction f v m t c 192.168.43.1 d i u 1 2 3 ACCEPT
+ipAction f v m t c 192.168.56.103 d i u 1 2 3 ACCEPT
+
+ipAction f v m t c 192.168.43.0/24 d i u 1 2 3 DROP
+ipAction f v m t c 192.168.56.0/24 d i u 1 2 3 DROP
+
+ipAction f filter
 
 echo ''
+echo 'NAT PREROUTING and MASK'
+echo ''
 
-# -j DNAT for prer , has need of ip ; REDIRECT doesn't have need of that
-# -j SNAT for post ,
-# --dport for inpout --sport for input!=output ? | input  => -s  src!=dest <= iM
-# --sport for output --dport for output!=input   | output => -d dest!=src  <= iM
+ipAction f v m nat PREROUTING 192.168.43.0/24 d i 80 192.168.56.103:8080
+ipAction f v vboxnet0
+ipAction f nat
 
-#**VBOX---TIME---**#
+
+echo ''
+echo 'VBOX TIME'
+echo ''
 
 outSo=`pgrep VirtualBoxVM`
-
 if (( ${#outSo} < 1 ));
 then
     sudo -S mkdir -p /media/kaumi/Hack
@@ -68,18 +57,11 @@ then
     sudo -S mount /dev/sdb1 /media/kaumi/Hack
 
     sleep 10
-    /usr/lib/virtualbox/VirtualBoxVM --startvm "{41c79128-74de-4b17-8805-ed8d47dd6032}" &
+    xfce4-terminal -e '/usr/lib/virtualbox/VirtualBoxVM --startvm "{41c79128-74de-4b17-8805-ed8d47dd6032}"' &
     sleep 5
+    xfce4-terminal -e $cono &
 fi
 
-bool=`pgrep VirtualBoxVM`
-until (( ${#bool} < 1 ));
-do
-    echo -n ' v exists '
-    sleep 60
-    bool=`pgrep VirtualBoxVM`
-done
+read -sp 'press enter for finish: '
 echo ''
-echo '! exists'
-stop
-
+echo ''

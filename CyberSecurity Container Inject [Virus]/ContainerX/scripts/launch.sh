@@ -3,32 +3,21 @@
 echo *** | sudo -S rm -f /usr/bin/launch
 sudo ln -s /home/kaumi/SoSupersonic/scripts/launch.sh /usr/bin/launch
 
+sudo rm -f /usr/bin/ipAction
+sudo ln -s /home/kaumi/SoSupersonic/scripts/Back/scripts/ipAction.sh /usr/bin/ipAction
+
 echo ''
-sudo iptables -Z
-sudo iptables -F
-sudo iptables -X
 
-sudo iptables -A INPUT  -s 192.168.56.1 -p udp --dport 8080 -j ACCEPT
-sudo iptables -A INPUT  -s 192.168.56.1 -p tcp --dport 8080 -j ACCEPT
-sudo iptables -A OUTPUT -d 192.168.56.1 -p udp --sport 8080 -j ACCEPT
-sudo iptables -A OUTPUT -d 192.168.56.1 -p tcp --sport 8080 -j ACCEPT
+ipAction filter
+ipAction nat
 
-sudo iptables -A INPUT  -p udp --dport 8080 -j DROP
-sudo iptables -A INPUT  -p tcp --dport 8080 -j DROP
-sudo iptables -A OUTPUT -p udp --sport 8080 -j DROP
-sudo iptables -A OUTPUT -p tcp --sport 8080 -j DROP
+ipAction f v m t c 192.168.56.1 d i 8080 1 2 3 ACCEPT
+ipAction f v m t c 192.168.56.1 d i 22 1 2 3 ACCEPT
 
-sudo iptables -A INPUT  -s 192.168.56.1 -p udp --dport 22 -j ACCEPT
-sudo iptables -A INPUT  -s 192.168.56.1 -p tcp --dport 22 -j ACCEPT
-sudo iptables -A OUTPUT -d 192.168.56.1 -p udp --sport 22 -j ACCEPT
-sudo iptables -A OUTPUT -d 192.168.56.1 -p tcp --sport 22 -j ACCEPT
+ipAction f v m filter INPUT s d i 8080 1 2 3 DROP
+ipAction f v m filter INPUT s d i 22 1 2 3 DROP
 
-sudo iptables -A INPUT  -p udp --dport 22 -j DROP
-sudo iptables -A INPUT  -p tcp --dport 22 -j DROP
-sudo iptables -A OUTPUT -p udp --sport 22 -j DROP
-sudo iptables -A OUTPUT -p tcp --sport 22 -j DROP
-
-sudo iptables -L -vn
+ipAction f filter
 
 cd /home/kaumi/SoSupersonic/server/
 
@@ -36,4 +25,7 @@ if [[ ! -f tsconfig.json ]]; then tsc --init ; fi ;
 
 /usr/bin/code /home/kaumi/SoSupersonic/server &
 
-sleep 3
+echo ''
+read -sp 'press enter for finish'
+echo ''
+echo ''
