@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# implicit not in until condiction
+# implicit not in until condition
 
 bool=`pgrep VirtualBoxVM`
 until ! (( ${#bool} > 0 ));
