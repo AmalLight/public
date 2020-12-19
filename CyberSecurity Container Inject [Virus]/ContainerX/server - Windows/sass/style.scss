@@ -1,0 +1,34 @@
+$var-primary   : orange;
+$var-secondary : orange;
+$var-tertiary  : royal;
+
+// $var : xxx !global  ; is not useful
+// $var : xxx !default ; is not useful
+
+// @mixin => @include for function like object in sass, like classes +-
+// alloc: @mixin functionName( $arg1, ... , $argn )
+//            {  ... : $usingArgvX ; }
+//
+// call:  @include functionName( $arg1, ... , $argn );
+
+// & like this for other languages <= it is not be usable in this context ( extend )
+
+// alloc: @function nameOfIt( $argv ) {
+//             @return ...
+//         }
+// call: .... : nameOfIt( $argv ); // without @include
+//
+// so the difference between @mixin vs @function , func.( HAS return, & dinamic or NOT, ONLY return has effect ) ;
+//                                                 mixi.( NO return, & static ONLY for first, ALL has effect ) .
+
+// default functions are: lighten( $color, $value_to_% );        // x% or .x
+//                        darken( $color, $value_to_% );         // x% or .x
+//                        transparentize( $color, $value_to_% ); // x% or .x
+//                        mix( $color1, $color2, $value_to_% );
+//                        .... other to see in future with vscode autocomplete ...
+
+body { background-color: $var-primary; }
+
+// preprocessore vs interprete:
+//     il preprocessore supporta il post-processato
+//     l'interprete non supporta il post-interpretato
