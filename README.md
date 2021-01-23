@@ -25,3 +25,9 @@ La PEC dovrebbe protegge in tutta Italia, gli enti statali invece cercano l'escl
 
 Solo il codice open source è di fatto pubblicabile online senza rischi.
 Il resto andrebbe reso e fatto transitare privatamente, poiché i privati ( non aziende del settore ) non hanno un organo di controllo che becca e multa gli imitatori e i contraffattori di software.
+
+-------------
+Who I Am ? :
+-------------
+
+https://github.com/AmalLight/public/tree/master/who_i_am
