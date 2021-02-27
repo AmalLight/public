@@ -40,7 +40,7 @@ Se la luna lo chiede ,
   Il sole lo comanda .
 Adesso .
 
-<<Bisogna risvegliare la vita>> ,
+""Bisogna risvegliare la vita"" ,
 trovarli un senso profondo ,
 perché non si smetta mai di amare parte del vuoto .
 
