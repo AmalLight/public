@@ -50,10 +50,10 @@ potrebbe anche essere gradevole colmare i vuoti del tempo .<br />
 
 Nel profondo di questo silenzio ,<br />
 questa parte del mondo ,<br />
-
 si sente come se avesse già perso , la guerra ,<br />
-e in guerra si perde sempre molto tempo ...<br />
-In lutto perché di fatto è stato ingenuo .<br />
+e in guerra si perde sempre molto tempo ...
+
+In lutto perché di fatto è stato ingenuo .
 
 Superficiale come in poche realtà ,<br />
 ci si può ancora salvare , .. credo .<br />
