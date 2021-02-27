@@ -37,28 +37,28 @@ this about what I think of some people in one of my countries.
 -----------------------------------------------------------------
 
 Se la luna lo chiede ,<br />
-  Il sole lo comanda .
+  Il sole lo comanda .<br />
 Adesso .
 
-""Bisogna risvegliare la vita"" ,
-trovarli un senso profondo ,
+""Bisogna risvegliare la vita"" ,<br />
+trovarli un senso profondo ,<br />
 perché non si smetta mai di amare parte del vuoto .
 
-Sentirsi svenire ,
-sentirsi diversi può ancora essere considerato speciale ,
-potrebbe anche essere gradevole colmare i vuoti del tempo .
+Sentirsi svenire ,<br />
+sentirsi diversi può ancora essere considerato speciale ,<br />
+potrebbe anche essere gradevole colmare i vuoti del tempo .<br />
 
-Nel profondo di questo silenzio ,
-questa parte del mondo ,
+Nel profondo di questo silenzio ,<br />
+questa parte del mondo ,<br />
 
-si sente come se avesse già perso la guerra ,
-e in guerra si perde sempre molto tempo ...
-In lutto perché di fatto è stato ingenuo .
+si sente come se avesse già perso la guerra ,<br />
+e in guerra si perde sempre molto tempo ...<br />
+In lutto perché di fatto è stato ingenuo .<br />
 
-Superficiale come in poche realtà ,
-ci si può ancora salvare , .. credo .
+Superficiale come in poche realtà ,<br />
+ci si può ancora salvare , .. credo .<br />
 
 individualmente è possibile , suppongo .
 
-C’è ancora spazio per vedervi cambiare , non penso .
+C’è ancora spazio per vedervi cambiare , non penso .<br />
 zero .
