@@ -31,3 +31,34 @@ Who I Am ? :
 -------------
 
 https://github.com/AmalLight/public/tree/master/who_i_am
+
+-----------------------------------------------------------------
+this about what I think of some people in one of my countries.
+-----------------------------------------------------------------
+
+Se la luna lo chiede ,
+  Il sole lo comanda .
+Adesso .
+
+<<Bisogna risvegliare la vita>> ,
+trovarli un senso profondo ,
+perché non si smetta mai di amare parte del vuoto .
+
+Sentirsi svenire ,
+sentirsi diversi può ancora essere considerato speciale ,
+potrebbe anche essere gradevole colmare i vuoti del tempo .
+
+Nel profondo di questo silenzio ,
+questa parte del mondo ,
+
+si sente come se avesse già perso la guerra ,
+e in guerra si perde sempre molto tempo ...
+In lutto perché di fatto è stato ingenuo .
+
+Superficiale come in poche realtà ,
+ci si può ancora salvare , .. credo .
+
+individualmente è possibile , suppongo .
+
+C’è ancora spazio per vedervi cambiare , non penso .
+zero .
