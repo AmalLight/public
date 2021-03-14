@@ -33,34 +33,35 @@ Who I Am ? :
 https://github.com/AmalLight/public/tree/master/who_i_am
 
 -----------------------------------------------------------------
-this about what I think of some people in one of my countries.
+this about yOU.
 -----------------------------------------------------------------
 
-Se la luna lo chiede ,<br />
-  Il sole lo comanda .<br />
-Adesso .
+Se la luna lo chiede ,
+  Il sole lo comanda .
+Adesso . <br />
 
-""Bisogna risvegliare la vita"" ,<br />
-trovarli un senso profondo ,<br />
-perché non si smetta mai di amare parte del vuoto .
+<< Bisogna risvegliare la vita >> ,
+trovarli un senso profondo ,
+perché non si smetta mai di amare parte del vuoto . <br />
 
-Sentirsi svenire ,<br />
-sentirsi diversi può ancora essere considerato speciale ,<br />
-potrebbe anche essere gradevole colmare i vuoti del tempo .<br />
+Sentirsi svenire ,
+sentirsi diversi può ancora essere considerato speciale ,
+potrebbe anche essere gradevole colmare i vuoti del tempo . <br />
 
-Nel profondo di questo silenzio ,<br />
-questa parte del mondo ,<br />
-si sente come se avesse già perso , la guerra ,<br />
+Nel profondo di questo silenzio ,
+questa parte del mondo ,
+si sente come se avesse già perso . <br />
+
 e in guerra si perde sempre molto tempo ...
+In lutto perché di fatto ingenuo . <br />
 
-In lutto perché di fatto è stato ingenuo .
+Superficiale come in poche realtà ,
+ci si può ancora salvare ... credo .<br />
 
-Superficiale come in poche realtà ,<br />
-ci si può ancora salvare , .. credo .<br />
+ovviamente individualmente è possibile , spero .
+ma il gruppo che detesto ... io non vedo . <br />
 
-individualmente è possibile , suppongo .
-
-C’è ancora spazio per vedervi cambiare , non penso .<br />
-zero .
+C’è ancora spazio per vedervi cambiare , non penso .
+oltre ai pochi numeri primi il resto conta soltanto come Zero . <br />
 
 https://www.youtube.com/watch?v=VE4rC8hH9Ag
