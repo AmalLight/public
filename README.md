@@ -36,32 +36,32 @@ https://github.com/AmalLight/public/tree/master/who_i_am
 this about yOU.
 -----------------------------------------------------------------
 
-Se la luna lo chiede ,
-  Il sole lo comanda .
+Se la luna lo chiede , <br />
+  Il sole lo comanda . <br />
 Adesso . <br />
 
-<< Bisogna risvegliare la vita >> ,
-trovarli un senso profondo ,
+<< Bisogna risvegliare la vita >> , <br />
+trovarli un senso profondo , <br />
 perché non si smetta mai di amare parte del vuoto . <br />
 
-Sentirsi svenire ,
-sentirsi diversi può ancora essere considerato speciale ,
+Sentirsi svenire , <br />
+sentirsi diversi può ancora essere considerato speciale , <br />
 potrebbe anche essere gradevole colmare i vuoti del tempo . <br />
 
-Nel profondo di questo silenzio ,
-questa parte del mondo ,
+Nel profondo di questo silenzio , <br />
+questa parte del mondo , <br />
 si sente come se avesse già perso . <br />
 
-e in guerra si perde sempre molto tempo ...
+e in guerra si perde sempre molto tempo ... <br />
 In lutto perché di fatto ingenuo . <br />
 
-Superficiale come in poche realtà ,
-ci si può ancora salvare ... credo .<br />
+Superficiale come in poche realtà , <br />
+ci si può ancora salvare ... credo . <br />
 
-ovviamente individualmente è possibile , spero .
+ovviamente individualmente è possibile , spero . <br />
 ma il gruppo che detesto ... io non vedo . <br />
 
-C’è ancora spazio per vedervi cambiare , non penso .
+C’è ancora spazio per vedervi cambiare , non penso . <br />
 oltre ai pochi numeri primi il resto conta soltanto come Zero . <br />
 
 https://www.youtube.com/watch?v=VE4rC8hH9Ag
